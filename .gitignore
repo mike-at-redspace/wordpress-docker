@@ -1,0 +1,30 @@
+.env
+
+# ignore everything in the root except the "wp-content" directory.
+!wp-app/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp-app/wp-content/*
+!wp-app/wp-content/mu-plugins/
+!wp-app/wp-content/plugins/
+!wp-app/wp-content/themes/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# ignore node dependency directories
+node_modules/
+
+# OS generated files #
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*.DS_Store
+
+# ignore log files and databases
+error_log
+*.log
+*.sql
+*.sqlite
